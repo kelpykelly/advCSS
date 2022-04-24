@@ -1,8 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-h1 h2 h3 h4 h5 h6{font-family: Lora, serif;}
+@media screen{   
+   
+   body {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      color: #333;
+      margin-top: 60px;
+      padding:5px;
+   }
 
-/*  ~~~Media Queries~~
-@media (width <= 480px ){} ~~Mobile view
-@media (width > 480px){} ~~Tablet or larger
-*/
+   h1, h2, h3, h4, h5, h6 {
+      font-family: Lora, serif;
+   }
+
+   h1{
+      font-size: 70px;
+   }
+
+   h1 a, h1 a:visited, h1 a:hover, h1 a:active{
+      color:#333;
+   }
+
+   h2{
+      color: #333;
+      font-size:30px;
+      padding: 5px 15px;
+   }
+
+   p{
+      padding:0px 15px;
+   }
+
+   a, a:visited{
+      color: #666;
+      text-decoration: none;
+   }
+
+   a:active{
+   color:#DEB887;
+   }
+
+   a:hover{
+      color:#00ddff;
+   }
+
+   header {
+      text-align: center;
+   }
+
+   nav{
+      border-top: 1px solid #d0d0d0;
+      border-bottom:1px solid #d0d0d0;
+   }
+
+   nav li{
+      list-style-type:none;
+   }
+
+   nav li:nth-child(2){
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   nav li a{
+      font-size: 20px;
+      font-family: Lora, serif;
+      text-transform: uppercase;
+   }
+
+   div{
+      border-bottom:1px solid #d0d0d0;
+   }
+
+   .post-date{
+      color:black;
+      font-size: 30px;
+      font-family: Lora, serif;
+      text-align: right;
+      padding: 60px 15px 10px;
+      text-transform: uppercase;
+   }
+
+   figure{
+      text-align: center;
+   }
+}
+
+@media screen and (min-width:480px){
+   body{
+      margin: 0px auto;
+   }
+   nav{
+      text-align:right;
+   }
+   nav li:nth-child(2){
+      padding-top: 0px;
+      padding-bottom: 0px;
+   }
+    li {
+       display:inline-block;
+      padding: 0px 10px;
+      }
+    nav a{display:block;}
+
+    article{
+      display:grid;
+      grid-template-rows: 1fr;
+       grid-template-columns: 25% 1fr;
+    }
+   
+    div{
+      border-bottom:0px solid #d0d0d0;
+   }
+
+   .post-date{
+      border-right: 1px solid #d0d0d0;
+   }
+
+   .post-content:first-of-type{
+      border-bottom: 1px solid #d0d0d0;
+   }
+
+ }
